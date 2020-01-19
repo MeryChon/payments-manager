@@ -18,17 +18,17 @@ class PaymentRowExpandable extends HTMLElement {
         });
     }
 
-    set payment(payment) { //TODO: user properties will be changed to payment properties
+    set payment(payment) {
         this.innerHTML = `
                             <style>
                                 @import "../styles/payment-row-expandable.css";
                             </style>
                             <div class="expandable">
-                                <b>${payment.username}</b>
-                                <div>${payment.name},  ${payment.email}, ${payment.phone}</div>
+                                <b>${payment.description}</b>
+                                <div>${payment.comment},  ${payment.paymentDate}, ${payment.amount}</div>
                             </div>
                             <div class="panel">
-                                <p>${payment.address.street} ${payment.address.zipcode}</p>
+                                <p>${payment.comment}</p>
                             </div>
                             `;
     }

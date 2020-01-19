@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 });
 
 async function fetchPaymentsData() {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const res = await fetch('http://localhost:3000/payments');
     const paymentsData = await res.json();
     const main = document.querySelector('main');
 

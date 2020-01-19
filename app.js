@@ -15,6 +15,8 @@ mongoose.connect('mongodb+srv://admin:' +
 app.use(bodyParser.urlencoded({extended: false})); //TODO: maybe true?
 app.use(bodyParser.json());
 
+app.use(express.static(__dirname + '/views'));
+
 app.use((req, res, next) => {
 	res.header('Access-Control-Allow-Origin', '*');
 	res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
