@@ -24,8 +24,17 @@ class PaymentRowExpandable extends HTMLElement {
                                 @import "../styles/payment-row-expandable.css";
                             </style>
                             <div class="expandable">
-                                <b>${payment.description}</b>
-                                <div>${payment.comment},  ${payment.paymentDate}, ${payment.amount}</div>
+                                <div class="details-flexbox">
+                                    <span id="left_column" class="flexbox-item">
+                                        <div class="left payment-description">${payment.description}</div>
+                                        <div class="left payment-category">${payment.category}</div>
+                                    </span>
+                                    <span id="right_column" class="flexbox-item">
+                                        <div class="right">${payment.paymentDate}</div>
+                                        <div class="right payment-amount">-${payment.amount}</div>                                    
+                                        <div class="right payment-amount">GEL</div>
+                                    </span>
+                                </div>                                
                             </div>
                             <div class="panel">
                                 <p>${payment.comment}</p>

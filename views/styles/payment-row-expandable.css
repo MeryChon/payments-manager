@@ -1,10 +1,10 @@
 .expandable {
-    background-color: #eee;
+    background-color: #e0f2f1;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 5px;
     width: 100%;
-    border: none;
+    border: 1px solid #cfd8dc;
     text-align: left;
     outline: none;
     font-size: 15px;
@@ -12,7 +12,7 @@
 }
 
 .active, .expandable:hover {
-    background-color: #ccc;
+    background-color: #b2dfdb;
 }
 
 .panel {
@@ -21,4 +21,60 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+.details-flexbox {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.flexbox-item {
+    flex: 1;
+    flex-grow: 1;
+    display: inline-block;
+    height: 100%;
+}
+
+.left {
+    /*position: absolute;
+    left: 0px;*/
+    padding: 10px;
+}
+
+.right {
+    /*position: absolute;*/
+    right: 0px;
+    padding: 10px;
+}
+
+.payment-description {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00251a;
+}
+
+.payment-category {
+    width: 15%;
+    clear: both;
+    font-size: 1em;
+    border: 1px solid #4db6ac;
+    color: #4db6ac;
+    border-radius: 8px;
+    margin: 2%;
+    padding: 3px;
+    text-align: center;
+}
+
+.payment-amount {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #c62828;
+}
+
+.payment-date {
+    font-size: 1em;
+    color: #607d8b;
 }
