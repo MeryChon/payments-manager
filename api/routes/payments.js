@@ -24,7 +24,9 @@ router.post('/', (req, res, next) => {
 		_id: new mongoose.Types.ObjectId(),
 		description: req.body.description,
 		comment: req.body.comment,
-		amount: req.body.amount
+		amount: req.body.amount,
+		category: req.body.category,
+		paymentDate: req.body.paymentDate
 	});
 
 	payment

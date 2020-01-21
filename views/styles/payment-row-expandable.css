@@ -1,5 +1,5 @@
 .expandable {
-    background-color: #e0f2f1;
+    background-color: #f2f9fc;
     color: #444;
     cursor: pointer;
     padding: 5px;
@@ -12,7 +12,7 @@
 }
 
 .active, .expandable:hover {
-    background-color: #b2dfdb;
+    background-color: #cde6fa;
 }
 
 .panel {
@@ -21,6 +21,7 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    background-color: #cde6fa;
 }
 
 .details-flexbox {
@@ -48,6 +49,7 @@
     /*position: absolute;*/
     right: 0px;
     padding: 10px;
+    text-align: right;
 }
 
 .payment-description {
@@ -77,4 +79,24 @@
 .payment-date {
     font-size: 1em;
     color: #607d8b;
+}
+
+.total-amount {
+    background-color: #9dc0cf;
+    color: white;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.grid-header {
+    background-color: #dae2e8;
+    color: #00251a;
+    font-size: 1.3em;
+    padding: 10px 5px; 
+}
+
+.grid-toolbar {
+    padding: : 10px;
+    background-color: #f2f9fc;
+    color: #444;
 }
